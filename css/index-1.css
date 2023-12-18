@@ -1,0 +1,402 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+@media (min-height: 100px)  {
+	nav {
+		position: fixed;
+	}
+}
+
+nav {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+nav .gation {
+	background: rgba(0, 0, 0, 0.342);
+	border-bottom: 1px solid #000;
+}
+
+nav input[type="checkbox"] {
+	display: none;
+}
+
+nav label {
+	float: right;
+	font-size: 40px;
+	margin-right: 10px;
+	transition: all 0.6s;
+}
+
+nav #togger:checked~ul {
+	display: block;
+}
+
+nav ul {
+	position: absolute;
+	width: 100%;
+	transition: all 0.6s;
+	/* background: rgba(0, 0, 0, 0.507); */
+	background: #fff;
+}
+
+nav label~ul {
+	display: none;
+}
+
+nav ul #form1 {
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px dashed #000;
+	height: 40px;
+	padding: 20px 0;
+	line-height: 40px;
+	text-align: center;
+}
+
+nav ul #form1 input[type="text"] {
+	height: 30px;
+	width: 180px;
+	margin-left: 10px;
+	border-radius: 5px 5px;
+	border: 1px solid rgba(0, 0, 0, 0.719);
+}
+
+nav ul #form1 input[type="button"] {
+	height: 32px;
+	padding: 0 10px;
+	border-radius: 5px 5px;
+	border: 1px solid rgba(0, 0, 0, 0.719);
+	cursor: pointer;
+}
+
+nav ul #form1 input[type="button"]:hover {
+	background: rgba(0, 0, 0, 0.342);
+	padding: 0 10px;
+}
+
+nav ul>li  {
+	text-align: center;
+	height: 30px;
+	padding: 10px 0;
+	font-size: 18px;
+	line-height: 30px;
+	border-bottom: 1px dashed #000;
+	transition: all 0.6s;
+}
+
+nav ul  li a  {
+	color: #000;
+}
+
+nav ul .lis {
+	border-bottom: none;
+}
+
+nav ul li:hover{
+	background: rgba(0, 0, 0, 0.342);
+
+}
+
+nav ul li:hover a {
+	color: #fff;
+}
+
+
+@media (min-width: 768px) {
+
+	nav label,
+	nav input[type="checkbox"] {
+		display: none;
+	}
+
+	nav .gation,
+	nav ul #form1 {
+		background: none;
+		border-bottom: none;
+	}
+
+
+	nav label~ul {
+		display: block;
+		position: static;
+	}
+
+	nav ul {
+		font-size: 18px;
+		margin-top: 20px;
+		width: 838px;
+		position: static;
+		transition: none;
+		float: right;
+		background: none;
+	}
+
+
+	nav ul #form1 {
+		padding: 0;
+		width: 260px;
+		float: left;
+	}
+
+	nav ul li  {
+		border: none;
+		padding: 5px 10px;
+	}
+
+	nav ul li {
+		float: left;
+		margin: 0 30px;
+	}
+
+
+	nav ul li:hover{
+		padding: 5px 10px;
+		border-radius: 10px;
+		
+		background: rgba(0, 0, 0, 0.342);
+
+	}
+
+	nav ul li:hover  a{
+         color: #fff;
+	}
+
+	.as {
+		background: rgba(202, 223, 16, 0.616);
+		border-radius: 10px;
+	}
+
+	.as li {
+		color: #000;
+	}
+}
+
+
+
+
+/* banner */
+
+section {
+	background-image: linear-gradient(to bottom right, #91defe, #99c0f9, #bdb6ec, #d7b3e3, #efb3d5, #f9bccc);
+	margin-top: 31px;
+	padding: 41px 0;
+}
+
+#banner {
+	margin: 30px auto;
+	width: 1200px;
+	height: 700px;
+	border: 2px solid #999;
+	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
+}
+
+#banner #imglist {
+	width: 6000px;
+	height: 700px;
+}
+
+#banner #imglist li {
+	float: left;
+}
+
+
+#banner #imglist li img {
+	width: 1200px;
+	height: 700px;
+}
+
+#banner #icolist {
+	position: absolute;
+	bottom: 20px;
+	right: 290px;
+}
+
+#banner #icolist li {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	line-height: 30px;
+	color: black;
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.button .button-left,
+.button .button-right {
+	background: #6666666b;
+	width: 60px;
+	height: 700px;
+	color: #fff;
+	font-size: 36px;
+	font-weight: bolder;
+	text-align: center;
+	line-height: 700px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.button .button-left {
+	top: 0;
+	left: 0;
+}
+
+.button .button-right {
+	top: 0;
+	right: 0;
+}
+
+@media (max-width: 768px) {
+	section {
+		display: none;
+	}
+}
+
+article {
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 50px 0;
+	border-radius: 10px;
+	max-width: 1200px;
+}
+
+article>h2 {
+	font-size: 25px;
+	margin: 30px 20px;
+}
+
+article .pos {
+	padding: 0 10px;
+	margin-top: 60px;
+}
+
+article .pos img{
+	width: 100%;
+	border-radius: 3px;
+}
+
+article .pos .pp {
+	position: relative;
+	margin-top: 30px;
+	text-indent: 2em;
+}
+
+article .pos .pp h3 {
+	font-size: 20px;
+}
+
+article .pos .pp p {
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+article .pos .pp span {
+	position: absolute;
+	right: 30px;
+	margin-top: 20px;
+	font-size: 15px;
+	padding: 5px 15px 5px 0;
+	transition: all 0.6s;
+}
+
+article .pos .pp span:hover {
+	background: #ccc;
+	border-radius: 10px;
+}
+
+article .pos .pp span a {
+	color: #000;
+}
+
+article .pos .pp span a:hover {
+	color: rgb(212, 21, 21);
+}
+
+@media (min-width: 768px) {
+
+	/* article {
+		background: rgba(241, 239, 239, 0.527);
+	} */
+
+	article .pos img{
+		width: 600px;
+		float: left;
+		margin-top: 100px;
+		transition: all .6s;
+	}
+
+	article .pos img:hover {
+		width: 606px;
+	}
+
+	article .pos img.ones{
+		float: right;
+	}
+
+	article .pos .pp {
+		width: 40%;
+		float: left;
+		margin-left: 30px;
+		margin-top: 160px;
+		background: #ccc;
+		border-radius: 10px;
+		padding: 30px;
+		padding-bottom: 40px;
+	}
+
+	article .pos .pps {
+		margin-right: 30px;
+		margin-left: 0;
+	}
+
+	article .pos .pp p {
+		line-height: 22px;
+	}
+
+	article .pos .pp span {
+		margin-top: 0;
+	}
+
+	article .pos .pp span:hover {
+		background: #fff;
+	}
+	
+	
+}
+
+.foor {
+	margin-top: 60px;
+	height: 60px;
+	background: #ccc;
+	text-align: center;
+}
+
+.foor p {
+	line-height: 60px;
+	font-size: 18px;
+}
+
+.foor p a {
+	color: #000;
+	transition: all 0.6s;
+}
+
+.foor p a:hover {
+	color: #f30909;
+}
